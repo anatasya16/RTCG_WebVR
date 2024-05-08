@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to Far Far Away!</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+    <script src="color-toggle.js"></script>
+    <script src="animationShrek-toggle.js"></script>
+    <script src="animationDonkey-toggle.js"></script>
+  </head>
+  <body>
+    <a-scene cursor="rayOrigin: mouse">
+      <a-assets>
+        <a-asset-item
+          id="donkey"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.me/6f830201-28a8-476a-927c-b2c4349c544f/talking_donkey.glb?v=1711227344391"
+        ></a-asset-item>
+        <a-asset-item
+          id="shrek"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.me/6f830201-28a8-476a-927c-b2c4349c544f/pocket_shrek_-_shrek.glb?v=1711225171182"
+        ></a-asset-item>
+        <a-asset-item
+          id="fox"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/fox.glb?v=1711235540192"
+        ></a-asset-item>
+        <a-asset-item
+          id="cat"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/shrek_forever_after_-_puss_in_boots.glb?v=1711229918719"
+        ></a-asset-item>
+        <a-asset-item
+          id="cookie"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/shrek_2_-_mongo.glb?v=1711229948626"
+        ></a-asset-item>
+        <a-asset-item
+          id="toilet"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/shreks_toilet.glb?v=1711229997501"
+        ></a-asset-item>
+        <a-asset-item
+          id="willowTree"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/tree.glb?v=1711238980641"
+        ></a-asset-item>
+        <a-asset-item
+          id="dragon"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.me/6f830201-28a8-476a-927c-b2c4349c544f/tarisland_-_dragon_high_poly.glb?v=1711230703759"
+        ></a-asset-item>
+        <a-asset-item
+          id="fire1"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/fire.glb?v=1711234602044"
+        ></a-asset-item>
+        <a-asset-item
+          id="fire2"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.me/6f830201-28a8-476a-927c-b2c4349c544f/camp_fire.glb?v=1711240847232"
+        ></a-asset-item>
+        <a-asset-item
+          id="tower"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/free_-_fantasy_guard_tower.glb?v=1711240868215"
+        ></a-asset-item>
+        <a-asset-item
+          id="tree1"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/oak_trees.glb?v=1711241351913"
+        ></a-asset-item>
+        <a-asset-item
+          id="tree2"
+          src="https://cdn.glitch.me/6f830201-28a8-476a-927c-b2c4349c544f/tree_of_life.glb?v=1711241180941"
+        ></a-asset-item>
+        <img
+          id="groundTexture"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/151_green-grass-texture-seamless_extendedver.png"
+        />
+        <img
+          id="skyTexture"
+          src="https://cdn.glitch.global/6f830201-28a8-476a-927c-b2c4349c544f/alex-bdnr-GNNoZa8zVwY-unsplash.jpg?v=1711206209722"
+        />
+      </a-assets>
+
+      <a-entity
+        gltf-model="#donkey"
+        scale="120.1 120.1 120.1"
+        position="2.518 0 -8.796"
+        rotation="0 120 0"
+        animation-mixer="clip:m_Donkey_breathe8"
+        animationdonkey-toggle
+      ></a-entity>
+      <a-entity
+        gltf-model="#shrek"
+        scale="1.1 1.1 1.1"
+        position="0 0 -9.931"
+        rotation="0 140 0"
+        animation-mixer="clip:m_Shrek_int_footTap1"
+        animationshrek-toggle
+      ></a-entity>
+      <a-entity
+        gltf-model="#willowTree"
+        scale="11.000 11.000 11.000"
+        position="-11.819 13.544 -76.600"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="-1.855 0 -23.890"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="3.994 0 7.548"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="-11.663 0 -3.628"
+        rotation="0 2 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="-17.284 0 -17.951"
+        rotation="0 4 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="9.763 0 5.850"
+        rotation="0 1 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="-2.240 0 10.255"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="2.153 0 -22.913"
+        rotation="0 2 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="7.217 0 -19.944"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="-16.450 0 9.309"
+        rotation="0 30 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree1"
+        scale="10 10 10"
+        position="0.422 0 12.828"
+        rotation="0 90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree2"
+        scale="3 3 3"
+        position="-11.819 13.544 -76.600"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#cookie"
+        scale="2.1 2.1 2.1"
+        position="15.886 0 -35.443"
+        rotation="100 20 50"
+        animation-mixer="clip:Mongo|carry2_Mongo"
+      ></a-entity>
+      <a-entity
+        gltf-model="#fox"
+        scale="0.007 0.007 0.007"
+        position="-3.204 0 -1.727"
+        rotation="0 100.260 0"
+        animation-mixer="clip:root.001|Waking Up"
+      ></a-entity>
+      <a-entity
+        gltf-model="#dragon"
+        scale="0.2 0.2 0.2"
+        position="-11.345 7.806 9.202"
+        rotation="0 0 0"
+        animation-mixer="clip:Qishilong_fly2"
+      ></a-entity>
+      <a-entity
+        gltf-model="#cat"
+        scale="1.1 1.1 1.1"
+        position="2.539 0 -5.785"
+        rotation="-90 -60 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#toilet"
+        scale="1.700 1.700 1.700"
+        position="-5.259 1.731 -5.785"
+        rotation="0 -85 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#fire1"
+        scale="2 2 2"
+        position="0.239 1.623 -3.428"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#fire2"
+        scale="0.003 0.003 0.003"
+        position="0.239 0.467 -3.428"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tower"
+        scale="7 7 7"
+        position="-11.173 0.528 10.490"
+        rotation="0 130 0"
+        animation-mixer="clip:wind"
+      ></a-entity>
+
+      <a-entity id="rig">
+        <a-entity camera position="0 2 0" look-controls wasd-controls>
+          <a-cursor
+            id="cursor"
+            raycaster
+            fuse="true"
+            fusetimeout="3000"
+          ></a-cursor>
+        </a-entity>
+      </a-entity>
+
+      <a-box
+        position="-1.168 2.495 -5.091"
+        rotation="-30 45 0"
+        scale="1 1 1"
+        color="#4CC3D9"
+        color-toggle
+      ></a-box>
+      <a-sphere
+        position="-1.269 6.481 -3.531"
+        scale="0.8 0.8 0.8"
+        radius="1.25"
+        color="#EF2D5E"
+        color-toggle
+      ></a-sphere>
+      <a-box
+        position="0.182 1.537 -5.232"
+        scale="0.7 0.7 0.7"
+        rotation="20 45 0"
+        color="#4CC3D9"
+        color-toggle
+      ></a-box>
+      <a-sphere
+        position="-0.017 4.703 -4.352"
+        scale="0.350 0.500 0.500"
+        radius="1.25"
+        color="#EF2D5E"
+        color-toggle
+      ></a-sphere>
+      <a-cylinder
+        position="1 3.206 -4.498"
+        rotation="50 30 0"
+        scale="0.8 0.8 0.8"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        color-toggle
+      ></a-cylinder>
+      <a-plane
+        src="#groundTexture"
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="100"
+        height="100"
+      ></a-plane>
+      <a-sky src="#skyTexture"></a-sky>
+    </a-scene>
+  </body>
+</html>
